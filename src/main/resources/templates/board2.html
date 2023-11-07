@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Gra</title>
+</head>
+<body>
+<div class="board">
+    <div th:each="icon : ${icons}">
+        <img th:src="@{/images/__${icon}__}" th:alt="Icon" />
+    </div>
+</div>
+
+</body>
+</html>
